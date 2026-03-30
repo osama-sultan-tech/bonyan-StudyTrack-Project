@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce4cd50-96a9-4a1b-92cb-e10f17c5fad3" name="Changes" comment="" />
+    <list default="true" id="9ce4cd50-96a9-4a1b-92cb-e10f17c5fad3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/controllers/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../laragon/bin/php/php-8.3.25-Win32-vs16-x64/php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -33,6 +40,10 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My_Projects/Herd/bunyan-tasks/bunyan-task2-StudyTrack/views&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -42,7 +53,11 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My_Projects\Herd\bunyan-tasks\bunyan-task2-StudyTrack\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My_Projects\Herd\bunyan-tasks\bunyan-task2-StudyTrack\Http\controllers" />
       <recent name="D:\My_Projects\Herd\bunyan-tasks\bunyan-task2-StudyTrack\public" />
       <recent name="D:\My_Projects\Herd\bunyan-tasks\bunyan-task2-StudyTrack" />
     </key>
@@ -64,11 +79,23 @@
       <updated>1773716687773</updated>
       <workItem from="1773716689180" duration="1720000" />
       <workItem from="1773757898683" duration="287000" />
-      <workItem from="1773758247207" duration="8063000" />
+      <workItem from="1773758247207" duration="15366000" />
+      <workItem from="1774100604349" duration="23070000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
