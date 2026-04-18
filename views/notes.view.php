@@ -12,7 +12,7 @@
             <ul class='list-disc list-inside px-4 py-6'>
                 <?php foreach ($notes as $note) : ?>
                     <li>
-                        <a href="/note?note_id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
+                        <a href="/note?note_id=<?= $note['id'] ?>&user_id=<?= $note['user_id']?>" class="text-blue-500 hover:underline">
                             <?= $note['title'] ?>
                         </a>
                     </li>

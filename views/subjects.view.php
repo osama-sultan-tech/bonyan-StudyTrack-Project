@@ -9,7 +9,7 @@
         <ul class='list-disc list-inside px-4 py-6'>
             <?php foreach ($subjects as $subject) : ?>
                 <li>
-                    <a href="/notes?subject_id=<?= $subject['id'] ?>" class="text-blue-500 hover:underline">
+                    <a href="/notes?subject_id=<?= $subject['id']?>&user_id=<?= $subject['user_id']?>" class="text-blue-500 hover:underline">
                         <?= $subject['name'] ?>
                     </a>
                 </li>

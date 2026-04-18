@@ -1,6 +1,8 @@
 <?php
 
 require 'Core/functions.php';
+require 'Core/Response.php';
+require  'Core/Database.php';
 
 
 $url = parse_url($_SERVER['REQUEST_URI'])['path'];
