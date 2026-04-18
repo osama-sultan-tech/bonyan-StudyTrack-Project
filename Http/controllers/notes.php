@@ -1,7 +1,7 @@
 <?php
 
 $heading = 'Notes of ' . ' { name of sub } ' . ' Subject';
-$current_user = 1;
+$current_user = 2;
 
 $subject_id = isset($_GET['subject_id']) ? $_GET['subject_id'] : abort();
 
@@ -14,16 +14,15 @@ $db = new Database($config['database'], 'root', '');
 
 $query =  "SELECT * FROM notes where subject_id = :subject_id  and user_id = :user_id";
 
-$notes = $db->query($query, ['subject_id' => $subject_id, 'user_id' => $user_id ])->fetchall(PDO::FETCH_ASSOC);
+$notes = $db->query($query, ['subject_id' => $subject_id, 'user_id' => $user_id ])->get();
+
+//dd($notes);
 
 if(! $notes){
     abort();
 }
 
-
-if($notes[0]['user_id'] !== $current_user){
-    abort(Response::FORBIDDEN);
-}
+//authorize($notes[0]['user_id'] !== $current_user);
 
 
 

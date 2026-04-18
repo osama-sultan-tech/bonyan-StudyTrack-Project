@@ -1,7 +1,7 @@
 <?php
 
 $heading = 'Your Subjects List';
-$current_user = 1;
+$current_user = 2;
 
 $config = require '../config.php';
 
@@ -12,18 +12,14 @@ $db = new Database($config['database'], 'root', '');
 
 $Query =  "SELECT * FROM subjects where user_id = :user_id";
 
-$subjects = $db->query($Query, ['user_id' => $user_id])->fetchAll();
+$subjects = $db->query($Query, ['user_id' => $user_id])->get();
 
 if(! $subjects){
     abort();
 }
 
 
-if($subjects[0]['user_id'] !== $current_user){
-    abort(Response::FORBIDDEN);
-}
-
-//dd($subjects);
+authorize($subjects[0]['user_id'] !== $current_user);
 
 
 

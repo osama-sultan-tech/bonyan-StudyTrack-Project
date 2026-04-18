@@ -11,7 +11,7 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                         <a href="/" aria-current="page" class=" <?=urlIs( '/') ? 'bg-gray-950/50 text-white ' : 'text-gray-300' ?> rounded-md  px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Home</a>
-                        <a href="/subjects?user_id=<?= 1 ?>" class=" <?= urlIs( '/subjects.php') ? 'bg-gray-950/50 text-white ' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Subjects</a>
+                        <a href="/subjects?user_id=<?= 2 ?>" class=" <?= urlIs( '/subjects.php') ? 'bg-gray-950/50 text-white ' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Subjects</a>
 <!--                        <a href="/notes" class=" --><?php //=urlIs( '/notes.php')  ? 'bg-gray-950/50 text-white ' : 'text-gray-300' ?><!-- rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Notes</a>-->
                         <a href="/habits" class=" <?=urlIs( '/habits.php')  ? 'bg-gray-950/50 text-white ' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Habits</a>
                     </div>

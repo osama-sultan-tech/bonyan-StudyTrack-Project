@@ -11,7 +11,7 @@
 
             <ul class='list-disc list-inside px-4 py-6'>
                 <P class="mb-6">
-                    <a href="/notes?subject_id=<?= $note['subject_id'] ?>&user_id=<?= $note['user_id']?>" class="text-blue-500 underline">Go Back ...</a>
+                    <a href="/notes?subject_id=<?= $note['subject_id'] ?>&user_id=<?= $note['user_id']?>" class="text-blue-500 underline">Back to Notes List ...</a>
                 </P>
 
                 <?= $note['content'] ?>
