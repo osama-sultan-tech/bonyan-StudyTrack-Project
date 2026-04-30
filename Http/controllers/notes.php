@@ -1,6 +1,6 @@
 <?php
 
-$heading = 'Notes of ' . ' { name of sub } ' . ' Subject';
+
 $current_user = 2;
 
 $subject_id = isset($_GET['subject_id']) ? $_GET['subject_id'] : abort();
@@ -16,11 +16,17 @@ $query =  "SELECT * FROM notes where subject_id = :subject_id  and user_id = :us
 
 $notes = $db->query($query, ['subject_id' => $subject_id, 'user_id' => $user_id ])->get();
 
+$Query =  "SELECT name FROM subjects where id = :id ";
+
+$current_subject = $db->query($Query, ['id' => $subject_id])->findOrFail();
+
+$heading = 'Notes of ' . $current_subject['name'] ;
+
 //dd($notes);
 
-if(! $notes){
-    abort();
-}
+//if(! $notes){
+//    abort();
+//}
 
 //authorize($notes[0]['user_id'] !== $current_user);
 

@@ -10,7 +10,9 @@ $url = parse_url($_SERVER['REQUEST_URI'])['path'];
 $routes = [
     '/' => '../Http/controllers/index.php',
     '/subjects' => '../Http/controllers/subjects.php',
+    '/subject/create' => '../Http/controllers/subject-create.php',
     '/notes' => '../Http/controllers/notes.php',
+    '/note/create' => '../Http/controllers/note-create.php',
     '/note' => '../Http/controllers/note.php',
     '/habits' => '../Http/controllers/habits.php',
 ];

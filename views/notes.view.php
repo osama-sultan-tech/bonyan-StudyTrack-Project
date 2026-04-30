@@ -24,6 +24,10 @@
 
                 <?php endforeach ?>
             </ul>
+
+            <p class="mt-6">
+                <a href="/note/create?subject_id=<?=$subject_id?>&user_id=<?= $user_id ?>" class="text-blue-500 hover:underline"> Create Note</a>
+            </p>
         </div>
     </main>
 

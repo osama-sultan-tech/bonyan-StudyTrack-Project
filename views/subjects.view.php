@@ -10,12 +10,16 @@
             <?php foreach ($subjects as $subject) : ?>
                 <li>
                     <a href="/notes?subject_id=<?= $subject['id']?>&user_id=<?= $subject['user_id']?>" class="text-blue-500 hover:underline">
-                        <?= $subject['name'] ?>
+                        <?= htmlspecialchars($subject['name'])  ?>
                     </a>
                 </li>
 
             <?php endforeach ?>
         </ul>
+
+        <p class="mt-6">
+            <a href="/subject/create?user_id=<?=$subject['user_id']?>" class="text-blue-500 hover:underline"> Create Subject</a>
+        </p>
     </div>
 </main>
 
